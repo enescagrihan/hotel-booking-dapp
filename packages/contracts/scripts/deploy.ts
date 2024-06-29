@@ -1,13 +1,11 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const greeting = "Hello, world!";
-  const greeter = await ethers.deployContract("Greeter", [
-    greeting,
-  ]);
-  await greeter.waitForDeployment();
+  const welcomeMessage = "Hello, world!";
+  const booking = await ethers.deployContract("HotelReservation");
+  await booking.waitForDeployment();
   console.log(
-    `Greeter with greeting "${greeting}" deployed to ${greeter.target}`,
+    `Greeter with greeting "${welcomeMessage}" deployed to ${booking.target}`
   );
 }
 

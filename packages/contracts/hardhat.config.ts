@@ -8,7 +8,7 @@ const config: HardhatUserConfig = {
   networks: {
     sepolia: {
       url: `https://eth-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
-      accounts: [process.env.SEPOLIA_PRIVATE_KEY ?? ''],
+      accounts: ["5add71698af31b073ffddeb686c6ad1936af564593f9632f245ed28ec5a29f99"],
     },
   },
   etherscan: {

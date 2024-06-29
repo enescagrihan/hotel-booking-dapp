@@ -9,8 +9,8 @@ import { hardhat, sepolia } from "wagmi/chains";
 const queryClient = new QueryClient();
 
 const config = getDefaultConfig({
-  appName: 'Solidity Next.js Starter',
-  projectId: process.env.NEXT_PUBLIC_RAINBOWKIT_PROJECT_ID ?? "",
+  appName: "Solidity Next.js Starter",
+  projectId: "ed16c403feaf2137295169b781a11df0",
   chains: [hardhat, sepolia],
   ssr: true,
 });
